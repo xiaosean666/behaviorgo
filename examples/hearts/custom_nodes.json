@@ -1,0 +1,121 @@
+{
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "same_color_nth",
+      "category": "action",
+      "title": "同花色第<rank>大牌",
+      "description": null,
+      "properties": {
+        "rank": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "same_color_count",
+      "category": "condition",
+      "title": "同花色牌数 > <count>",
+      "description": null,
+      "properties": {
+        "count": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "master_card_count",
+      "category": "condition",
+      "title": "主花色牌 > <count>",
+      "description": null,
+      "properties": {
+        "count": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "randN",
+      "category": "condition",
+      "title": "<val> / <weight> 的概率",
+      "description": null,
+      "properties": {
+        "weight": 0,
+        "val": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "master_card_nth",
+      "category": "action",
+      "title": "主花色第<rank>的牌",
+      "description": "rank int\nrole [myself, opponents,partner]",
+      "properties": {
+        "rank": 0,
+        "role": ""
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "other_card_small_nth",
+      "category": "action",
+      "title": "其它任意花色第<rank>小牌",
+      "description": "rank int\nrole [myself, opponents,partner]",
+      "properties": {
+        "rank": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "other_card_nth",
+      "category": "action",
+      "title": "其它任意花色第<rank>大的牌",
+      "description": "除主其它花色最大牌\nrank int\nrole [myself, opponents,partner]",
+      "properties": {
+        "rank": 0
+      }
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "is_partner_biggest",
+      "category": "condition",
+      "title": "队友是否已经最大",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "same_card_smallest",
+      "category": "action",
+      "title": "同花色最小牌",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "same_card_bigger",
+      "category": "condition",
+      "title": "是否有同花色比牌堆大的牌",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "cur_player_idx",
+      "category": "condition",
+      "title": "第<card_count>位玩家",
+      "description": "牌堆牌数",
+      "properties": {
+        "card_count": 0
+      }
+    }
+  ]
+}

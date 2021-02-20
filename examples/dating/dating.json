@@ -1,0 +1,605 @@
+{
+    "version": "0.3.0",
+    "scope": "project",
+    "selectedTree": "c6577ceb-b6ec-40cc-812f-96e9c9984221",
+    "trees": [
+        {
+            "version": "0.3.0",
+            "scope": "tree",
+            "id": "c6577ceb-b6ec-40cc-812f-96e9c9984221",
+            "title": "dating",
+            "description": "直男约会指南",
+            "root": "7cbfa867-6fa0-443b-9791-e7ba13a85ebf",
+            "properties": {},
+            "nodes": {
+                "90443236-3573-48a7-91da-e8123c7ccdb5": {
+                    "id": "90443236-3573-48a7-91da-e8123c7ccdb5",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "去球场打球",
+                    "properties": {},
+                    "display": {
+                        "x": -552,
+                        "y": -372
+                    },
+                    "children": [
+                        "aeed98e3-e14c-4c69-8ce9-13d8ea4c6e4a",
+                        "1a92cbfe-8835-4035-acc8-e540cbc048f0",
+                        "2ec67bc0-e233-44f2-93b1-cf03dbda9d05"
+                    ]
+                },
+                "2ec67bc0-e233-44f2-93b1-cf03dbda9d05": {
+                    "id": "2ec67bc0-e233-44f2-93b1-cf03dbda9d05",
+                    "name": "playball",
+                    "category": "action",
+                    "title": "playball",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -336,
+                        "y": -288
+                    }
+                },
+                "44440ae0-1589-42fd-866e-157ef63a3b9e": {
+                    "id": "44440ae0-1589-42fd-866e-157ef63a3b9e",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "回家拿钱",
+                    "properties": {},
+                    "display": {
+                        "x": -132,
+                        "y": -12
+                    },
+                    "children": [
+                        "4e92c608-53f1-44d7-b15d-e1888861eb35",
+                        "5cb96e22-333d-424c-841f-101a2394d270",
+                        "5c813092-3fd3-49fc-8468-5c2bdf130431",
+                        "53adddbb-09e7-41df-b43a-62a880ccbd3b"
+                    ]
+                },
+                "b9a1d400-43d5-46c0-a507-5e326db7a4f0": {
+                    "id": "b9a1d400-43d5-46c0-a507-5e326db7a4f0",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "去花店买花",
+                    "properties": {},
+                    "display": {
+                        "x": -132,
+                        "y": 372
+                    },
+                    "children": [
+                        "82409f2c-65aa-4e20-9e0a-44f1e1b55aa0",
+                        "eeedab7f-b14b-4707-98b9-bf0ccb4da739",
+                        "22f64771-6a8a-4d82-89db-f5b6e6c2f41e",
+                        "7d017c59-c3b7-4292-92af-65e0e6135fce"
+                    ]
+                },
+                "d3ed83b3-ea63-4f3d-ad17-2a3827cedcb8": {
+                    "id": "d3ed83b3-ea63-4f3d-ad17-2a3827cedcb8",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "去见女友",
+                    "properties": {},
+                    "display": {
+                        "x": -132,
+                        "y": 768
+                    },
+                    "children": [
+                        "1c2a3957-327f-41ee-842e-07e5b8e51e05",
+                        "99886d31-f509-4f29-8525-dc7187d4f67b",
+                        "b2e0b082-72e8-4e2f-862f-3bac46f41479",
+                        "bac4bdac-b7aa-4ac4-89ee-7126554e5756",
+                        "9ff65ac1-4a71-44d7-a42c-90ec54eb00f1"
+                    ]
+                },
+                "1a92cbfe-8835-4035-acc8-e540cbc048f0": {
+                    "id": "1a92cbfe-8835-4035-acc8-e540cbc048f0",
+                    "name": "go",
+                    "category": "action",
+                    "title": "go <place>",
+                    "description": "",
+                    "properties": {
+                        "place": "court"
+                    },
+                    "display": {
+                        "x": -336,
+                        "y": -372
+                    }
+                },
+                "aeed98e3-e14c-4c69-8ce9-13d8ea4c6e4a": {
+                    "id": "aeed98e3-e14c-4c69-8ce9-13d8ea4c6e4a",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -336,
+                        "y": -456
+                    },
+                    "child": "91e0693a-4bea-4918-8305-7b5276368d25"
+                },
+                "91e0693a-4bea-4918-8305-7b5276368d25": {
+                    "id": "91e0693a-4bea-4918-8305-7b5276368d25",
+                    "name": "isdate",
+                    "category": "condition",
+                    "title": "isdate <month>-<day>",
+                    "description": "",
+                    "properties": {
+                        "month": 2,
+                        "day": 14
+                    },
+                    "display": {
+                        "x": -132,
+                        "y": -456
+                    }
+                },
+                "ccf8fd03-2ac0-42f8-8bf7-82996d7dbd55": {
+                    "id": "ccf8fd03-2ac0-42f8-8bf7-82996d7dbd55",
+                    "name": "shs",
+                    "category": "condition",
+                    "title": "<someone> has <something>",
+                    "description": "someone has something",
+                    "properties": {
+                        "someone": "girl",
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 288,
+                        "y": -192
+                    }
+                },
+                "4e92c608-53f1-44d7-b15d-e1888861eb35": {
+                    "id": "4e92c608-53f1-44d7-b15d-e1888861eb35",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 72,
+                        "y": -192
+                    },
+                    "child": "ccf8fd03-2ac0-42f8-8bf7-82996d7dbd55"
+                },
+                "ff93b867-dfe7-43b1-b1f4-6119a488e1e4": {
+                    "id": "ff93b867-dfe7-43b1-b1f4-6119a488e1e4",
+                    "name": "shs",
+                    "category": "condition",
+                    "title": "<someone> has <something>",
+                    "description": "someone has something",
+                    "properties": {
+                        "someone": "myself",
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 492,
+                        "y": -108
+                    }
+                },
+                "5565766d-46fd-4871-a2c5-a6629f28eeb4": {
+                    "id": "5565766d-46fd-4871-a2c5-a6629f28eeb4",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 288,
+                        "y": -108
+                    },
+                    "child": "ff93b867-dfe7-43b1-b1f4-6119a488e1e4"
+                },
+                "a0115d1f-8114-40b1-8dda-e3a5bf6270f4": {
+                    "id": "a0115d1f-8114-40b1-8dda-e3a5bf6270f4",
+                    "name": "shs",
+                    "category": "condition",
+                    "title": "<someone> has <something>",
+                    "description": "someone has something",
+                    "properties": {
+                        "someone": "myself",
+                        "something": "money"
+                    },
+                    "display": {
+                        "x": 492,
+                        "y": -24
+                    }
+                },
+                "fde809f8-3b7d-4a12-8eee-aa206d478139": {
+                    "id": "fde809f8-3b7d-4a12-8eee-aa206d478139",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 288,
+                        "y": -24
+                    },
+                    "child": "a0115d1f-8114-40b1-8dda-e3a5bf6270f4"
+                },
+                "5cb96e22-333d-424c-841f-101a2394d270": {
+                    "id": "5cb96e22-333d-424c-841f-101a2394d270",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 72,
+                        "y": -60
+                    },
+                    "children": [
+                        "5565766d-46fd-4871-a2c5-a6629f28eeb4",
+                        "fde809f8-3b7d-4a12-8eee-aa206d478139"
+                    ]
+                },
+                "5c813092-3fd3-49fc-8468-5c2bdf130431": {
+                    "id": "5c813092-3fd3-49fc-8468-5c2bdf130431",
+                    "name": "go",
+                    "category": "action",
+                    "title": "go <place>",
+                    "description": "",
+                    "properties": {
+                        "place": "home"
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 72
+                    }
+                },
+                "53adddbb-09e7-41df-b43a-62a880ccbd3b": {
+                    "id": "53adddbb-09e7-41df-b43a-62a880ccbd3b",
+                    "name": "take",
+                    "category": "action",
+                    "title": "take <something>",
+                    "description": "",
+                    "properties": {
+                        "something": "money"
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 156
+                    }
+                },
+                "82409f2c-65aa-4e20-9e0a-44f1e1b55aa0": {
+                    "id": "82409f2c-65aa-4e20-9e0a-44f1e1b55aa0",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 72,
+                        "y": 240
+                    },
+                    "child": "1db94761-a377-4435-8991-d328573b09ad"
+                },
+                "1db94761-a377-4435-8991-d328573b09ad": {
+                    "id": "1db94761-a377-4435-8991-d328573b09ad",
+                    "name": "shs",
+                    "category": "condition",
+                    "title": "<someone> has <something>",
+                    "description": "someone has something",
+                    "properties": {
+                        "someone": "girl",
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 288,
+                        "y": 240
+                    }
+                },
+                "eeedab7f-b14b-4707-98b9-bf0ccb4da739": {
+                    "id": "eeedab7f-b14b-4707-98b9-bf0ccb4da739",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 72,
+                        "y": 336
+                    },
+                    "child": "58fcf36c-a129-4bd5-89a1-e3977813f386"
+                },
+                "58fcf36c-a129-4bd5-89a1-e3977813f386": {
+                    "id": "58fcf36c-a129-4bd5-89a1-e3977813f386",
+                    "name": "shs",
+                    "category": "condition",
+                    "title": "<someone> has <something>",
+                    "description": "someone has something",
+                    "properties": {
+                        "someone": "myself",
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 288,
+                        "y": 336
+                    }
+                },
+                "22f64771-6a8a-4d82-89db-f5b6e6c2f41e": {
+                    "id": "22f64771-6a8a-4d82-89db-f5b6e6c2f41e",
+                    "name": "go",
+                    "category": "action",
+                    "title": "go <place>",
+                    "description": "",
+                    "properties": {
+                        "place": "shop"
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 420
+                    }
+                },
+                "7d017c59-c3b7-4292-92af-65e0e6135fce": {
+                    "id": "7d017c59-c3b7-4292-92af-65e0e6135fce",
+                    "name": "buy",
+                    "category": "action",
+                    "title": "buy <something>",
+                    "description": "",
+                    "properties": {
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 504
+                    }
+                },
+                "1c2a3957-327f-41ee-842e-07e5b8e51e05": {
+                    "id": "1c2a3957-327f-41ee-842e-07e5b8e51e05",
+                    "name": "find",
+                    "category": "action",
+                    "title": "find <someone>",
+                    "description": "",
+                    "properties": {
+                        "someone": "girl"
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 600
+                    }
+                },
+                "b4d0ae61-42c4-428d-a5a0-71880af1cfa0": {
+                    "id": "b4d0ae61-42c4-428d-a5a0-71880af1cfa0",
+                    "name": "shs",
+                    "category": "condition",
+                    "title": "<someone> has <something>",
+                    "description": "someone has something",
+                    "properties": {
+                        "someone": "girl",
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 288,
+                        "y": 684
+                    }
+                },
+                "99886d31-f509-4f29-8525-dc7187d4f67b": {
+                    "id": "99886d31-f509-4f29-8525-dc7187d4f67b",
+                    "name": "Inverter",
+                    "category": "decorator",
+                    "title": "Inverter",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 72,
+                        "y": 684
+                    },
+                    "child": "b4d0ae61-42c4-428d-a5a0-71880af1cfa0"
+                },
+                "b2e0b082-72e8-4e2f-862f-3bac46f41479": {
+                    "id": "b2e0b082-72e8-4e2f-862f-3bac46f41479",
+                    "name": "give",
+                    "category": "action",
+                    "title": "give <something>",
+                    "description": "flower",
+                    "properties": {
+                        "something": "flower"
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 768
+                    }
+                },
+                "c3005101-860f-486e-8708-8c4d8c771263": {
+                    "id": "c3005101-860f-486e-8708-8c4d8c771263",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -336,
+                        "y": 768
+                    },
+                    "children": [
+                        "d3ed83b3-ea63-4f3d-ad17-2a3827cedcb8"
+                    ]
+                },
+                "9ff65ac1-4a71-44d7-a42c-90ec54eb00f1": {
+                    "id": "9ff65ac1-4a71-44d7-a42c-90ec54eb00f1",
+                    "name": "kfc",
+                    "category": "action",
+                    "title": "kfc",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 72,
+                        "y": 948
+                    }
+                },
+                "bac4bdac-b7aa-4ac4-89ee-7126554e5756": {
+                    "id": "bac4bdac-b7aa-4ac4-89ee-7126554e5756",
+                    "name": "randN",
+                    "category": "condition",
+                    "title": "randN(<weight>) < <val>",
+                    "description": "",
+                    "properties": {
+                        "weight": 100,
+                        "val": 50
+                    },
+                    "display": {
+                        "x": 72,
+                        "y": 864
+                    }
+                },
+                "d9f49b1c-9e29-40c2-80e3-b8ca2036c006": {
+                    "id": "d9f49b1c-9e29-40c2-80e3-b8ca2036c006",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -552,
+                        "y": 480
+                    },
+                    "children": [
+                        "11b7d3b1-b32e-4f3b-8b29-547a22a52a4d",
+                        "c3005101-860f-486e-8708-8c4d8c771263"
+                    ]
+                },
+                "11b7d3b1-b32e-4f3b-8b29-547a22a52a4d": {
+                    "id": "11b7d3b1-b32e-4f3b-8b29-547a22a52a4d",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -336,
+                        "y": 180
+                    },
+                    "children": [
+                        "44440ae0-1589-42fd-866e-157ef63a3b9e",
+                        "b9a1d400-43d5-46c0-a507-5e326db7a4f0"
+                    ]
+                },
+                "7cbfa867-6fa0-443b-9791-e7ba13a85ebf": {
+                    "id": "7cbfa867-6fa0-443b-9791-e7ba13a85ebf",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -756,
+                        "y": 60
+                    },
+                    "children": [
+                        "90443236-3573-48a7-91da-e8123c7ccdb5",
+                        "d9f49b1c-9e29-40c2-80e3-b8ca2036c006"
+                    ]
+                }
+            },
+            "display": {
+                "camera_x": 1280,
+                "camera_y": 680,
+                "camera_z": 0.75,
+                "x": -960,
+                "y": 60
+            }
+        }
+    ],
+    "custom_nodes": [
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "playball",
+            "category": "action",
+            "title": "playball",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "go",
+            "category": "action",
+            "title": "go <place>",
+            "description": null,
+            "properties": {
+                "place": "court"
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "isdate",
+            "category": "condition",
+            "title": "isdate <month>-<day>",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "shs",
+            "category": "condition",
+            "title": "<someone> has <something>",
+            "description": "someone has something",
+            "properties": {
+                "someone": ""
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "take",
+            "category": "action",
+            "title": "take <something>",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "buy",
+            "category": "action",
+            "title": "buy <something>",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "find",
+            "category": "action",
+            "title": "find <someone>",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "give",
+            "category": "action",
+            "title": "give <something>",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "kfc",
+            "category": "action",
+            "title": "kfc",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "randN",
+            "category": "condition",
+            "title": "randN(<weight>) < <val>",
+            "description": null,
+            "properties": {}
+        }
+    ]
+}

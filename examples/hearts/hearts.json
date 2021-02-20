@@ -1,0 +1,918 @@
+{
+    "version": "0.3.0",
+    "scope": "project",
+    "selectedTree": "b79a4bce-ea8d-45e7-81aa-75bdda1cf5a3",
+    "trees": [
+        {
+            "version": "0.3.0",
+            "scope": "tree",
+            "id": "b79a4bce-ea8d-45e7-81aa-75bdda1cf5a3",
+            "title": "hearts-1st",
+            "description": "第一出手AI\n黑板内容:\n{\nmaster_color: 0x01,\ncurplayerid:1,\nplayerlist: [1,2,3,4],\ncardslist:[[1,2,3],[1,2,3],...]\nplaycards:[1,2,3,4]\n}",
+            "root": "71a29899-53eb-458a-8dfc-dacc73b78bd3",
+            "properties": {},
+            "nodes": {
+                "71a29899-53eb-458a-8dfc-dacc73b78bd3": {
+                    "id": "71a29899-53eb-458a-8dfc-dacc73b78bd3",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -576,
+                        "y": -180
+                    },
+                    "children": [
+                        "7ef12a3c-89a4-422c-8bec-b80192cdae30",
+                        "e96b9e15-555c-4b06-8640-d9a9de4083fb",
+                        "63ac8f38-96c0-41d7-b9a5-9436b21f0e58"
+                    ]
+                },
+                "7ef12a3c-89a4-422c-8bec-b80192cdae30": {
+                    "id": "7ef12a3c-89a4-422c-8bec-b80192cdae30",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -372,
+                        "y": -300
+                    },
+                    "children": [
+                        "079628c8-1f4e-489b-8b58-938266b435b0",
+                        "e8304fe4-58b9-4d39-80d5-e8cf2f3e1b20"
+                    ]
+                },
+                "079628c8-1f4e-489b-8b58-938266b435b0": {
+                    "id": "079628c8-1f4e-489b-8b58-938266b435b0",
+                    "name": "randN",
+                    "category": "condition",
+                    "title": "<val> / <weight> 的概率",
+                    "description": "",
+                    "properties": {
+                        "weight": 100,
+                        "val": 50
+                    },
+                    "display": {
+                        "x": -156,
+                        "y": -336
+                    }
+                },
+                "e8304fe4-58b9-4d39-80d5-e8cf2f3e1b20": {
+                    "id": "e8304fe4-58b9-4d39-80d5-e8cf2f3e1b20",
+                    "name": "master_card_nth",
+                    "category": "action",
+                    "title": "主花色第<rank>的牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 1,
+                        "role": ""
+                    },
+                    "display": {
+                        "x": -156,
+                        "y": -252
+                    }
+                },
+                "256846fd-c90b-4ff6-8dbc-44c41e7e4b12": {
+                    "id": "256846fd-c90b-4ff6-8dbc-44c41e7e4b12",
+                    "name": "randN",
+                    "category": "condition",
+                    "title": "<val> / <weight> 的概率",
+                    "description": "",
+                    "properties": {
+                        "weight": 100,
+                        "val": 50
+                    },
+                    "display": {
+                        "x": -156,
+                        "y": -168
+                    }
+                },
+                "e96b9e15-555c-4b06-8640-d9a9de4083fb": {
+                    "id": "e96b9e15-555c-4b06-8640-d9a9de4083fb",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -372,
+                        "y": -72
+                    },
+                    "children": [
+                        "256846fd-c90b-4ff6-8dbc-44c41e7e4b12",
+                        "240cf345-edb4-459c-84f0-8af3ce0b43aa"
+                    ]
+                },
+                "240cf345-edb4-459c-84f0-8af3ce0b43aa": {
+                    "id": "240cf345-edb4-459c-84f0-8af3ce0b43aa",
+                    "name": "other_card_nth",
+                    "category": "action",
+                    "title": "其它任意花色第<rank>大的牌",
+                    "description": "除主其它花色最大牌\nrank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 1
+                    },
+                    "display": {
+                        "x": -156,
+                        "y": -72
+                    }
+                },
+                "63ac8f38-96c0-41d7-b9a5-9436b21f0e58": {
+                    "id": "63ac8f38-96c0-41d7-b9a5-9436b21f0e58",
+                    "name": "other_card_small_nth",
+                    "category": "action",
+                    "title": "其它任意花色第<rank>小牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 1
+                    },
+                    "display": {
+                        "x": -324,
+                        "y": 180
+                    }
+                }
+            },
+            "display": {
+                "camera_x": 1045.475000021048,
+                "camera_y": 680,
+                "camera_z": 1,
+                "x": -780,
+                "y": -180
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "tree",
+            "id": "cbfdfe5a-d0f2-43ae-a468-feb2cc98ea68",
+            "title": "hearts-2nd",
+            "description": "",
+            "root": "00bbb01f-0e32-441b-873a-e9b6968feebe",
+            "properties": {},
+            "nodes": {
+                "00bbb01f-0e32-441b-873a-e9b6968feebe": {
+                    "id": "00bbb01f-0e32-441b-873a-e9b6968feebe",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -396,
+                        "y": -84
+                    },
+                    "children": [
+                        "ecef899e-dfac-4bec-880e-3b2f13092c80",
+                        "f838aaab-a35b-4d84-8bbb-f02e6699551f",
+                        "07912fb2-5ffb-4eda-85ac-c52ec98256fb"
+                    ]
+                },
+                "ecef899e-dfac-4bec-880e-3b2f13092c80": {
+                    "id": "ecef899e-dfac-4bec-880e-3b2f13092c80",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -192,
+                        "y": -252
+                    },
+                    "children": [
+                        "87492cac-5934-44d6-a919-d4b5544a8bef",
+                        "407b25a3-02ae-4f90-8991-c794effec766"
+                    ]
+                },
+                "87492cac-5934-44d6-a919-d4b5544a8bef": {
+                    "id": "87492cac-5934-44d6-a919-d4b5544a8bef",
+                    "name": "same_color_count",
+                    "category": "condition",
+                    "title": "同花色牌数 > <count>",
+                    "description": "",
+                    "properties": {
+                        "count": 0
+                    },
+                    "display": {
+                        "x": 24,
+                        "y": -300
+                    }
+                },
+                "f838aaab-a35b-4d84-8bbb-f02e6699551f": {
+                    "id": "f838aaab-a35b-4d84-8bbb-f02e6699551f",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -192,
+                        "y": -72
+                    },
+                    "children": [
+                        "ed5059a7-da6a-44b3-a657-afc9ec8d558d",
+                        "9e99e71c-450e-405c-813a-21311dab8e77"
+                    ]
+                },
+                "407b25a3-02ae-4f90-8991-c794effec766": {
+                    "id": "407b25a3-02ae-4f90-8991-c794effec766",
+                    "name": "same_color_nth",
+                    "category": "action",
+                    "title": "同花色第<rank>大牌",
+                    "description": "",
+                    "properties": {
+                        "rank": 1
+                    },
+                    "display": {
+                        "x": 24,
+                        "y": -204
+                    }
+                },
+                "ed5059a7-da6a-44b3-a657-afc9ec8d558d": {
+                    "id": "ed5059a7-da6a-44b3-a657-afc9ec8d558d",
+                    "name": "master_card_count",
+                    "category": "condition",
+                    "title": "主花色牌 > <count>",
+                    "description": "",
+                    "properties": {
+                        "count": 0
+                    },
+                    "display": {
+                        "x": 24,
+                        "y": -120
+                    }
+                },
+                "9e99e71c-450e-405c-813a-21311dab8e77": {
+                    "id": "9e99e71c-450e-405c-813a-21311dab8e77",
+                    "name": "master_card_nth",
+                    "category": "action",
+                    "title": "主花色第<rank>的牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 0,
+                        "role": ""
+                    },
+                    "display": {
+                        "x": 24,
+                        "y": -36
+                    }
+                },
+                "07912fb2-5ffb-4eda-85ac-c52ec98256fb": {
+                    "id": "07912fb2-5ffb-4eda-85ac-c52ec98256fb",
+                    "name": "other_card_small_nth",
+                    "category": "action",
+                    "title": "其它任意花色第<rank>小牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 1
+                    },
+                    "display": {
+                        "x": -192,
+                        "y": 60
+                    }
+                }
+            },
+            "display": {
+                "camera_x": 1280,
+                "camera_y": 680,
+                "camera_z": 1,
+                "x": -600,
+                "y": -84
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "tree",
+            "id": "f3f1fe4b-bd77-49d2-84ed-8fc994ba9013",
+            "title": "hearts-3rd",
+            "description": "",
+            "root": "fcdfc543-ef1a-42f4-8e57-2bb7830c90d9",
+            "properties": {},
+            "nodes": {
+                "fcdfc543-ef1a-42f4-8e57-2bb7830c90d9": {
+                    "id": "fcdfc543-ef1a-42f4-8e57-2bb7830c90d9",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -408,
+                        "y": -72
+                    },
+                    "children": [
+                        "64362651-ea81-48de-8a81-ea96b86fdae4",
+                        "d688141c-577a-4f75-a5ef-0328dc725d7a"
+                    ]
+                },
+                "64362651-ea81-48de-8a81-ea96b86fdae4": {
+                    "id": "64362651-ea81-48de-8a81-ea96b86fdae4",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -204,
+                        "y": -396
+                    },
+                    "children": [
+                        "4d9472e7-18b0-4506-b347-b0022ea6143a",
+                        "7926ae2a-a1e1-4eae-aaa5-5dbf5b05bb99"
+                    ]
+                },
+                "4d9472e7-18b0-4506-b347-b0022ea6143a": {
+                    "id": "4d9472e7-18b0-4506-b347-b0022ea6143a",
+                    "name": "is_partner_biggest",
+                    "category": "condition",
+                    "title": "队友是否已经最大",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 12,
+                        "y": -492
+                    }
+                },
+                "5f77a8f2-edbe-4050-9c5d-9ac0c515c33c": {
+                    "id": "5f77a8f2-edbe-4050-9c5d-9ac0c515c33c",
+                    "name": "same_color_count",
+                    "category": "condition",
+                    "title": "同花色牌数 > <count>",
+                    "description": "",
+                    "properties": {
+                        "count": 0
+                    },
+                    "display": {
+                        "x": 420,
+                        "y": -408
+                    }
+                },
+                "d1caea3d-ee68-4136-8a3e-9c5583ac77cf": {
+                    "id": "d1caea3d-ee68-4136-8a3e-9c5583ac77cf",
+                    "name": "same_card_smallest",
+                    "category": "action",
+                    "title": "同花色最小牌",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 420,
+                        "y": -312
+                    }
+                },
+                "30386143-6c46-4450-8ac4-2aa5c872cb6e": {
+                    "id": "30386143-6c46-4450-8ac4-2aa5c872cb6e",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 216,
+                        "y": -360
+                    },
+                    "children": [
+                        "5f77a8f2-edbe-4050-9c5d-9ac0c515c33c",
+                        "d1caea3d-ee68-4136-8a3e-9c5583ac77cf"
+                    ]
+                },
+                "7926ae2a-a1e1-4eae-aaa5-5dbf5b05bb99": {
+                    "id": "7926ae2a-a1e1-4eae-aaa5-5dbf5b05bb99",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 12,
+                        "y": -288
+                    },
+                    "children": [
+                        "30386143-6c46-4450-8ac4-2aa5c872cb6e",
+                        "90e36cc5-160d-48a3-9d7c-4e395065bc14"
+                    ]
+                },
+                "90e36cc5-160d-48a3-9d7c-4e395065bc14": {
+                    "id": "90e36cc5-160d-48a3-9d7c-4e395065bc14",
+                    "name": "other_card_small_nth",
+                    "category": "action",
+                    "title": "其它任意花色第<rank>小牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 1
+                    },
+                    "display": {
+                        "x": 216,
+                        "y": -228
+                    }
+                },
+                "c08c69ef-0f34-48df-a185-0a684280ce63": {
+                    "id": "c08c69ef-0f34-48df-a185-0a684280ce63",
+                    "name": "same_color_count",
+                    "category": "condition",
+                    "title": "同花色牌数 > <count>",
+                    "description": "",
+                    "properties": {
+                        "count": 0
+                    },
+                    "display": {
+                        "x": 216,
+                        "y": -144
+                    }
+                },
+                "f2f0319d-ab71-43ef-8d4a-eaccd4541f6b": {
+                    "id": "f2f0319d-ab71-43ef-8d4a-eaccd4541f6b",
+                    "name": "same_card_bigger",
+                    "category": "condition",
+                    "title": "是否有同花色比牌堆大的牌",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 216,
+                        "y": -48
+                    }
+                },
+                "82b15f86-4e01-40d4-847c-13442e7994c6": {
+                    "id": "82b15f86-4e01-40d4-847c-13442e7994c6",
+                    "name": "same_color_nth",
+                    "category": "action",
+                    "title": "同花色第<rank>大牌",
+                    "description": "",
+                    "properties": {
+                        "rank": 1
+                    },
+                    "display": {
+                        "x": 216,
+                        "y": 36
+                    }
+                },
+                "d688141c-577a-4f75-a5ef-0328dc725d7a": {
+                    "id": "d688141c-577a-4f75-a5ef-0328dc725d7a",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -204,
+                        "y": 240
+                    },
+                    "children": [
+                        "3774d6c2-b7ed-4ef1-8a30-8766b1bca02f",
+                        "8c55dbcb-0f50-4cb0-8bfe-7059ce039ea8",
+                        "2398d203-32ec-4a81-9cbc-c9478a414569",
+                        "0d458ca4-ecb3-492f-853a-d2b01a96b89b"
+                    ]
+                },
+                "3774d6c2-b7ed-4ef1-8a30-8766b1bca02f": {
+                    "id": "3774d6c2-b7ed-4ef1-8a30-8766b1bca02f",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 12,
+                        "y": -48
+                    },
+                    "children": [
+                        "c08c69ef-0f34-48df-a185-0a684280ce63",
+                        "f2f0319d-ab71-43ef-8d4a-eaccd4541f6b",
+                        "82b15f86-4e01-40d4-847c-13442e7994c6"
+                    ]
+                },
+                "8c55dbcb-0f50-4cb0-8bfe-7059ce039ea8": {
+                    "id": "8c55dbcb-0f50-4cb0-8bfe-7059ce039ea8",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 12,
+                        "y": 168
+                    },
+                    "children": [
+                        "28f270b6-b7b8-4cfd-8d85-a1b762c38404",
+                        "923b3969-e9d4-4bd4-8fca-db3a6c67dc5c"
+                    ]
+                },
+                "28f270b6-b7b8-4cfd-8d85-a1b762c38404": {
+                    "id": "28f270b6-b7b8-4cfd-8d85-a1b762c38404",
+                    "name": "master_card_count",
+                    "category": "condition",
+                    "title": "主花色牌 > <count>",
+                    "description": "",
+                    "properties": {
+                        "count": 0
+                    },
+                    "display": {
+                        "x": 216,
+                        "y": 120
+                    }
+                },
+                "923b3969-e9d4-4bd4-8fca-db3a6c67dc5c": {
+                    "id": "923b3969-e9d4-4bd4-8fca-db3a6c67dc5c",
+                    "name": "master_card_nth",
+                    "category": "action",
+                    "title": "主花色第<rank>的牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 1,
+                        "role": ""
+                    },
+                    "display": {
+                        "x": 216,
+                        "y": 216
+                    }
+                },
+                "a99db6e0-467f-4bf0-af37-7ea48e6e6a23": {
+                    "id": "a99db6e0-467f-4bf0-af37-7ea48e6e6a23",
+                    "name": "same_color_count",
+                    "category": "condition",
+                    "title": "同花色牌数 > <count>",
+                    "description": "",
+                    "properties": {
+                        "count": 0
+                    },
+                    "display": {
+                        "x": 216,
+                        "y": 300
+                    }
+                },
+                "2398d203-32ec-4a81-9cbc-c9478a414569": {
+                    "id": "2398d203-32ec-4a81-9cbc-c9478a414569",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 12,
+                        "y": 348
+                    },
+                    "children": [
+                        "a99db6e0-467f-4bf0-af37-7ea48e6e6a23",
+                        "6301673b-6eb0-41eb-ba0d-aeec045b4b91"
+                    ]
+                },
+                "6301673b-6eb0-41eb-ba0d-aeec045b4b91": {
+                    "id": "6301673b-6eb0-41eb-ba0d-aeec045b4b91",
+                    "name": "same_card_smallest",
+                    "category": "action",
+                    "title": "同花色最小牌",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 216,
+                        "y": 384
+                    }
+                },
+                "0d458ca4-ecb3-492f-853a-d2b01a96b89b": {
+                    "id": "0d458ca4-ecb3-492f-853a-d2b01a96b89b",
+                    "name": "other_card_small_nth",
+                    "category": "action",
+                    "title": "其它任意花色第<rank>小牌",
+                    "description": "rank int\nrole [myself, opponents,partner]",
+                    "properties": {
+                        "rank": 0
+                    },
+                    "display": {
+                        "x": 12,
+                        "y": 480
+                    }
+                }
+            },
+            "display": {
+                "camera_x": 1280,
+                "camera_y": 680,
+                "camera_z": 1,
+                "x": -612,
+                "y": -72
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "tree",
+            "id": "94422727-fdac-4bd6-882c-3e0466678c9c",
+            "title": "hearts-main",
+            "description": "主树",
+            "root": "0e227342-1e05-41c0-aebb-64bd1afa5235",
+            "properties": {},
+            "nodes": {
+                "0e227342-1e05-41c0-aebb-64bd1afa5235": {
+                    "id": "0e227342-1e05-41c0-aebb-64bd1afa5235",
+                    "name": "Priority",
+                    "category": "composite",
+                    "title": "Priority",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -300,
+                        "y": -72
+                    },
+                    "children": [
+                        "4675bd97-3f26-4e04-8c02-f431a187db6d",
+                        "ae0a2d09-f8b0-438a-83b4-c04928a3da78",
+                        "34f283e8-2533-4a89-8683-5f79ffb5f1c6",
+                        "66595aa6-0c37-4036-8112-4777f1bf244f"
+                    ]
+                },
+                "4675bd97-3f26-4e04-8c02-f431a187db6d": {
+                    "id": "4675bd97-3f26-4e04-8c02-f431a187db6d",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -96,
+                        "y": -336
+                    },
+                    "children": [
+                        "950ef3c6-c756-4d76-8ca4-66ffa66e9318",
+                        "09ef5e33-c6e9-4693-8924-e170044f861a"
+                    ]
+                },
+                "ae0a2d09-f8b0-438a-83b4-c04928a3da78": {
+                    "id": "ae0a2d09-f8b0-438a-83b4-c04928a3da78",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -96,
+                        "y": -168
+                    },
+                    "children": [
+                        "158454d2-e0b0-40ea-80fb-45cc71dacc1a",
+                        "d5ba9d58-9042-46b7-bc27-e29e25d99141"
+                    ]
+                },
+                "34f283e8-2533-4a89-8683-5f79ffb5f1c6": {
+                    "id": "34f283e8-2533-4a89-8683-5f79ffb5f1c6",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -96,
+                        "y": 12
+                    },
+                    "children": [
+                        "267c5b1f-3846-4bd2-870d-dd4f0e52e5ce",
+                        "90077a1f-d1cf-40e2-b611-46dbcafd501d"
+                    ]
+                },
+                "66595aa6-0c37-4036-8112-4777f1bf244f": {
+                    "id": "66595aa6-0c37-4036-8112-4777f1bf244f",
+                    "name": "Sequence",
+                    "category": "composite",
+                    "title": "Sequence",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": -96,
+                        "y": 192
+                    },
+                    "children": [
+                        "84a79f1d-b960-4b5f-8218-8173abfa6c51",
+                        "6697f817-da97-4f28-9d2d-3150c3112e9f"
+                    ]
+                },
+                "950ef3c6-c756-4d76-8ca4-66ffa66e9318": {
+                    "id": "950ef3c6-c756-4d76-8ca4-66ffa66e9318",
+                    "name": "cur_player_idx",
+                    "category": "condition",
+                    "title": "第<card_count>位玩家",
+                    "description": "牌堆牌数",
+                    "properties": {
+                        "card_count": 0
+                    },
+                    "display": {
+                        "x": 120,
+                        "y": -384
+                    }
+                },
+                "09ef5e33-c6e9-4693-8924-e170044f861a": {
+                    "id": "09ef5e33-c6e9-4693-8924-e170044f861a",
+                    "name": "b79a4bce-ea8d-45e7-81aa-75bdda1cf5a3",
+                    "category": "tree",
+                    "title": "hearts-1st",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 120,
+                        "y": -300
+                    }
+                },
+                "d5ba9d58-9042-46b7-bc27-e29e25d99141": {
+                    "id": "d5ba9d58-9042-46b7-bc27-e29e25d99141",
+                    "name": "cbfdfe5a-d0f2-43ae-a468-feb2cc98ea68",
+                    "category": "tree",
+                    "title": "hearts-2nd",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 120,
+                        "y": -120
+                    }
+                },
+                "158454d2-e0b0-40ea-80fb-45cc71dacc1a": {
+                    "id": "158454d2-e0b0-40ea-80fb-45cc71dacc1a",
+                    "name": "cur_player_idx",
+                    "category": "condition",
+                    "title": "第<card_count>位玩家",
+                    "description": "牌堆牌数",
+                    "properties": {
+                        "card_count": 1
+                    },
+                    "display": {
+                        "x": 120,
+                        "y": -204
+                    }
+                },
+                "267c5b1f-3846-4bd2-870d-dd4f0e52e5ce": {
+                    "id": "267c5b1f-3846-4bd2-870d-dd4f0e52e5ce",
+                    "name": "cur_player_idx",
+                    "category": "condition",
+                    "title": "第<card_count>位玩家",
+                    "description": "牌堆牌数",
+                    "properties": {
+                        "card_count": 2
+                    },
+                    "display": {
+                        "x": 120,
+                        "y": -36
+                    }
+                },
+                "90077a1f-d1cf-40e2-b611-46dbcafd501d": {
+                    "id": "90077a1f-d1cf-40e2-b611-46dbcafd501d",
+                    "name": "f3f1fe4b-bd77-49d2-84ed-8fc994ba9013",
+                    "category": "tree",
+                    "title": "hearts-3rd",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 120,
+                        "y": 60
+                    }
+                },
+                "84a79f1d-b960-4b5f-8218-8173abfa6c51": {
+                    "id": "84a79f1d-b960-4b5f-8218-8173abfa6c51",
+                    "name": "cur_player_idx",
+                    "category": "condition",
+                    "title": "第<card_count>位玩家",
+                    "description": "牌堆牌数",
+                    "properties": {
+                        "card_count": 3
+                    },
+                    "display": {
+                        "x": 120,
+                        "y": 144
+                    }
+                },
+                "6697f817-da97-4f28-9d2d-3150c3112e9f": {
+                    "id": "6697f817-da97-4f28-9d2d-3150c3112e9f",
+                    "name": "f3f1fe4b-bd77-49d2-84ed-8fc994ba9013",
+                    "category": "tree",
+                    "title": "hearts-3rd",
+                    "description": "",
+                    "properties": {},
+                    "display": {
+                        "x": 120,
+                        "y": 228
+                    }
+                }
+            },
+            "display": {
+                "camera_x": 829.6449999627657,
+                "camera_y": 680,
+                "camera_z": 1,
+                "x": -504,
+                "y": -72
+            }
+        }
+    ],
+    "custom_nodes": [
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "same_color_nth",
+            "category": "action",
+            "title": "同花色第<rank>大牌",
+            "description": null,
+            "properties": {
+                "rank": 0
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "same_color_count",
+            "category": "condition",
+            "title": "同花色牌数 > <count>",
+            "description": null,
+            "properties": {
+                "count": 0
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "master_card_count",
+            "category": "condition",
+            "title": "主花色牌 > <count>",
+            "description": null,
+            "properties": {
+                "count": 0
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "randN",
+            "category": "condition",
+            "title": "<val> / <weight> 的概率",
+            "description": null,
+            "properties": {
+                "weight": 0,
+                "val": 0
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "master_card_nth",
+            "category": "action",
+            "title": "主花色第<rank>的牌",
+            "description": "rank int\nrole [myself, opponents,partner]",
+            "properties": {
+                "rank": 0,
+                "role": ""
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "other_card_small_nth",
+            "category": "action",
+            "title": "其它任意花色第<rank>小牌",
+            "description": "rank int\nrole [myself, opponents,partner]",
+            "properties": {
+                "rank": 0
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "other_card_nth",
+            "category": "action",
+            "title": "其它任意花色第<rank>大的牌",
+            "description": "除主其它花色最大牌\nrank int\nrole [myself, opponents,partner]",
+            "properties": {
+                "rank": 0
+            }
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "is_partner_biggest",
+            "category": "condition",
+            "title": "队友是否已经最大",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "same_card_smallest",
+            "category": "action",
+            "title": "同花色最小牌",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "same_card_bigger",
+            "category": "condition",
+            "title": "是否有同花色比牌堆大的牌",
+            "description": null,
+            "properties": {}
+        },
+        {
+            "version": "0.3.0",
+            "scope": "node",
+            "name": "cur_player_idx",
+            "category": "condition",
+            "title": "第<card_count>位玩家",
+            "description": "牌堆牌数",
+            "properties": {
+                "card_count": 0
+            }
+        }
+    ]
+}
