@@ -3,13 +3,13 @@ package m
 import (
 	"fmt"
 
-	b3 "github.com/magicsea/behavior3go"
+	b3 "github.com/huilong-cn/behavior3go"
 
-	//. "github.com/magicsea/behavior3go/actions"
-	//. "github.com/magicsea/behavior3go/composites"
-	. "github.com/magicsea/behavior3go/config"
-	. "github.com/magicsea/behavior3go/core"
-	//. "github.com/magicsea/behavior3go/decorators"
+	//. "github.com/huilong-cn/behavior3go/actions"
+	//. "github.com/huilong-cn/behavior3go/composites"
+	. "github.com/huilong-cn/behavior3go/config"
+	. "github.com/huilong-cn/behavior3go/core"
+	//. "github.com/huilong-cn/behavior3go/decorators"
 )
 
 //Buy 自定义action节点

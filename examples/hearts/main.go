@@ -9,10 +9,10 @@ import (
 	"sync"
 
 	"./htree"
-	b3 "github.com/magicsea/behavior3go"
-	. "github.com/magicsea/behavior3go/config"
-	core "github.com/magicsea/behavior3go/core"
-	. "github.com/magicsea/behavior3go/loader"
+	b3 "github.com/huilong-cn/behavior3go"
+	. "github.com/huilong-cn/behavior3go/config"
+	core "github.com/huilong-cn/behavior3go/core"
+	. "github.com/huilong-cn/behavior3go/loader"
 )
 
 func main() {

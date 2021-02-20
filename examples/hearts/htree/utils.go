@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/magicsea/behavior3go/core"
+	"github.com/huilong-cn/behavior3go/core"
 )
 
 var gRander = rand.New(rand.NewSource(time.Now().UnixNano()))

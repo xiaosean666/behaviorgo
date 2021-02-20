@@ -1,10 +1,11 @@
 package actions
 
 import (
-	b3 "github.com/magicsea/behavior3go"
-	. "github.com/magicsea/behavior3go/config"
-	. "github.com/magicsea/behavior3go/core"
 	"time"
+
+	b3 "github.com/huilong-cn/behavior3go"
+	. "github.com/huilong-cn/behavior3go/config"
+	. "github.com/huilong-cn/behavior3go/core"
 )
 
 /**
