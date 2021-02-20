@@ -2,6 +2,7 @@
 
 golang behavior tree,from https://github.com/behavior3
 
+forked from magicsea/behavior3go
 ## 简介
 
 带在线编辑器的行为树，可使用官方的在线编辑器编辑逻辑节点。  
