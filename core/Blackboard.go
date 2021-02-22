@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 )
+
 /**
  * The Blackboard is the memory structure required by `BehaviorTree` and its
  * nodes. It only have 2 public methods: `set` and `get`. These methods works
@@ -70,8 +71,9 @@ func (this *Memory) Set(key string, val interface{}) {
 	this._memory[key] = val
 }
 func (this *Memory) Remove(key string) {
-	delete(this._memory,key)
+	delete(this._memory, key)
 }
+
 //------------------------TreeMemory-------------------------
 type TreeMemory struct {
 	*Memory
@@ -133,6 +135,21 @@ func (this *Blackboard) _getNodeMemory(treeMemory *TreeMemory, nodeScope string)
 	}
 
 	return memory[nodeScope]
+}
+
+//Memory export for get memory
+func (this *Blackboard) Memory(treeScope, nodeScope string) *Memory {
+	var memory = this._baseMemory
+
+	if len(treeScope) > 0 {
+		treeMem := this._getTreeMemory(treeScope)
+		memory = treeMem.Memory
+		if len(nodeScope) > 0 {
+			memory = this._getNodeMemory(treeMem, nodeScope)
+		}
+	}
+
+	return memory
 }
 
 /**
@@ -223,7 +240,7 @@ func (this *Blackboard) Get(key, treeScope, nodeScope string) interface{} {
 	return memory.Get(key)
 }
 func (this *Blackboard) GetMem(key string) interface{} {
-	memory := this._getMemory("","")
+	memory := this._getMemory("", "")
 	return memory.Get(key)
 }
 func (this *Blackboard) GetFloat64(key, treeScope, nodeScope string) float64 {
@@ -285,7 +302,7 @@ func (this *Blackboard) GetInt32(key, treeScope, nodeScope string) int32 {
 	return v.(int32)
 }
 
-func ReadNumberToInt64(v interface{})  int64 {
+func ReadNumberToInt64(v interface{}) int64 {
 	var ret int64
 	switch tvalue := v.(type) {
 	case uint64:
@@ -307,6 +324,7 @@ func ReadNumberToUInt64(v interface{}) uint64 {
 	}
 	return ret
 }
+
 //
 //func ReadNumberToInt32(v interface{}) int32 {
 //	var ret int32
