@@ -287,8 +287,6 @@ func (this *BehaviorTree) Tick(target interface{}, blackboard *Blackboard) b3.St
 	tick.Blackboard = blackboard
 	tick.tree = this
 
-	blackboard.Trace(this.root)
-
 	/* TICK NODE */
 	var state = this.root._execute(tick)
 
