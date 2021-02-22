@@ -137,8 +137,8 @@ func (this *Blackboard) _getNodeMemory(treeMemory *TreeMemory, nodeScope string)
 	return memory[nodeScope]
 }
 
-//Memory export for get memory
-func (this *Blackboard) Memory(treeScope, nodeScope string) *Memory {
+//GetMemoryMap export for get memory
+func (this *Blackboard) GetMemoryMap(treeScope, nodeScope string) map[string]interface{} {
 	var memory = this._baseMemory
 
 	if len(treeScope) > 0 {
@@ -149,7 +149,7 @@ func (this *Blackboard) Memory(treeScope, nodeScope string) *Memory {
 		}
 	}
 
-	return memory
+	return memory._memory
 }
 
 /**
