@@ -302,6 +302,16 @@ func (this *Blackboard) GetInt32(key, treeScope, nodeScope string) int32 {
 	return v.(int32)
 }
 
+//Trace trace tree traval node
+func (this *Blackboard) Trace(node IBaseNode) {
+	v := this.Get("TRACING", "", "")
+	nodetile := fmt.Sprintf("[%s]", node.GetTitle())
+	if v == nil {
+		this.Set("TRACING", nodetile, "", "")
+	}
+	this.Set("TRACING", v.(string)+"->"+nodetile, "", "")
+}
+
 func ReadNumberToInt64(v interface{}) int64 {
 	var ret int64
 	switch tvalue := v.(type) {
