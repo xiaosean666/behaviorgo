@@ -303,13 +303,16 @@ func (this *Blackboard) GetInt32(key, treeScope, nodeScope string) int32 {
 }
 
 //Trace trace tree traval node
+const TRACEKEY = "TRACE-KEY"
+
 func (this *Blackboard) Trace(node IBaseNode) {
-	v := this.Get("TRACING", "", "")
+	v := this.Get(TRACEKEY, "", "")
 	nodetile := fmt.Sprintf("[%s]", node.GetTitle())
 	if v == nil {
-		this.Set("TRACING", nodetile, "", "")
+		this.Set(TRACEKEY, nodetile, "", "")
+		return
 	}
-	this.Set("TRACING", v.(string)+"->"+nodetile, "", "")
+	this.Set(TRACEKEY, v.(string)+"->"+nodetile, "", "")
 }
 
 func ReadNumberToInt64(v interface{}) int64 {
