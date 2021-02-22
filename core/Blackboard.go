@@ -312,7 +312,7 @@ func (this *Blackboard) Trace(node IBaseNode) {
 		this.Set(TRACEKEY, nodetile, "", "")
 		return
 	}
-	this.Set(TRACEKEY, v.(string)+">>>|"+nodetile+"|", "", "")
+	this.Set(TRACEKEY, v.(string)+"---["+nodetile+"]", "", "")
 }
 
 func ReadNumberToInt64(v interface{}) int64 {
