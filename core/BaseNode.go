@@ -210,7 +210,6 @@ func (this *BaseNode) _execute(tick *Tick) b3.Status {
 	return status
 }
 func (this *BaseNode) Execute(tick *Tick) b3.Status {
-	tick.Blackboard.Trace(this)
 	return this._execute(tick)
 }
 
@@ -247,6 +246,7 @@ func (this *BaseNode) _open(tick *Tick) {
 **/
 func (this *BaseNode) _tick(tick *Tick) b3.Status {
 	//fmt.Println("_tick :", this.title)
+	tick.Blackboard.Trace(this)
 	tick._tickNode(this)
 	return this.OnTick(tick)
 }
