@@ -13,7 +13,7 @@ const (
 
 // Returning status
 type Status uint8
-
+ 
 const (
 	SUCCESS Status = 1
 	FAILURE Status = 2
